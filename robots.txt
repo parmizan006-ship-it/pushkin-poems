@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://radiant-tiramisu-16d2fa.netlify.app/sitemap.xml

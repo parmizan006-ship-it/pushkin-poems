@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Стихи Пушкина — собрание лучших стихотворений А.С. Пушкина</title>
+<meta name="description" content="Собрание стихотворений Александра Сергеевича Пушкина. Я вас любил, Зимнее утро, К Чаадаеву, У лукоморья дуб зелёный и другие великие стихи русского поэта.">
+<meta name="keywords" content="Пушкин стихи, Александр Пушкин, русская поэзия, классическая литература, Я вас любил, Зимнее утро, К Чаадаеву, стихотворения Пушкина">
+<meta name="author" content="А.С. Пушкин">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://radiant-tiramisu-16d2fa.netlify.app/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Стихи Пушкина — собрание лучших стихотворений">
+<meta property="og:description" content="Собрание стихотворений А.С. Пушкина. Читайте великие стихи русского поэта.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://radiant-tiramisu-16d2fa.netlify.app/">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Стихи Пушкина — собрание лучших стихотворений">
+<meta name="twitter:description" content="Собрание стихотворений А.С. Пушкина.">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Стихи Пушкина",
+  "url": "https://radiant-tiramisu-16d2fa.netlify.app/",
+  "description": "Собрание стихотворений Александра Сергеевича Пушкина",
+  "inLanguage": "ru"
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --cream: #fdfbf7;
+    --cream-dark: #f5f0e6;
+    --parchment: #e8dfd0;
+    --gold: #c9a96e;
+    --gold-light: #ddb96e;
+    --gold-dark: #8b6914;
+    --brown: #4a2c17;
+    --brown-light: #6b4226;
+    --text: #3d2317;
+    --text-muted: #7a5c3a;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 50%, #ede6d8 100%);
+    color: var(--text);
+    line-height: 1.8;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  .bg-ornament {
+    position: fixed;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.04;
+    transition: transform 0.1s linear;
+  }
+
+  .bg-ornament-1 { top: 5%; right: -5%; width: 400px; height: 400px; }
+  .bg-ornament-2 { top: 40%; left: -8%; width: 350px; height: 350px; }
+  .bg-ornament-3 { bottom: 10%; right: -3%; width: 300px; height: 300px; }
+  .bg-ornament-4 { top: 70%; right: 5%; width: 250px; height: 250px; }
+
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px 60px;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--gold), transparent);
+  }
+
+  .hero-frame {
+    position: relative;
+    display: inline-block;
+    padding: 40px 60px;
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(245,240,230,0.4));
+    box-shadow: 0 8px 40px rgba(74,44,23,0.08), inset 0 0 60px rgba(201,169,110,0.05);
+  }
+
+  .hero-frame::before, .hero-frame::after {
+    content: '';
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 2px solid var(--gold);
+  }
+  .hero-frame::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+  .hero-frame::after { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+  .hero-corner-tl, .hero-corner-tr, .hero-corner-bl, .hero-corner-br {
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 2px solid var(--gold);
+  }
+  .hero-corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+  .hero-corner-tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+  .hero-corner-bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+  .hero-corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+  .hero-deco-top, .hero-deco-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+  }
+
+  .hero-deco-line {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold));
+  }
+  .hero-deco-line.right { background: linear-gradient(90deg, var(--gold), transparent); }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--brown);
+    letter-spacing: 4px;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    color: var(--gold-dark);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    font-weight: 400;
+  }
+
+  .hero-years {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+
+  .scroll-hint {
+    text-align: center;
+    padding: 20px 0 40px;
+    animation: bounce 2.5s infinite ease-in-out;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); opacity: 0.3; }
+    50% { transform: translateY(10px); opacity: 0.7; }
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 48px 0;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .divider.visible { opacity: 1; transform: scale(1); }
+
+  .divider-line {
+    flex: 1;
+    max-width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  .divider-ornament {
+    width: 32px;
+    height: 32px;
+    color: var(--gold);
+    opacity: 0.7;
+  }
+
+  .poem-card {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(250,247,240,0.7));
+    border-radius: 4px;
+    padding: 48px 40px 36px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 30px rgba(74,44,23,0.06), 0 1px 3px rgba(74,44,23,0.04);
+    border: 1px solid rgba(201,169,110,0.2);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(60px) rotateX(5deg);
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  .poem-card.visible {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
+  .poem-card:hover {
+    box-shadow: 0 12px 50px rgba(74,44,23,0.12), 0 2px 6px rgba(74,44,23,0.06);
+    transform: translateY(-4px);
+  }
+
+  .poem-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 10%, var(--gold) 50%, transparent 90%);
+    opacity: 0.6;
+  }
+  .poem-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 20%; right: 20%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--parchment), transparent);
+  }
+
+  .poem-bg-ornament {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; height: 200px;
+    opacity: 0.03;
+    pointer-events: none;
+    color: var(--brown);
+  }
+
+  .poem-header {
+    text-align: center;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .poem-header-bar {
+    width: 50px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 16px;
+    border-radius: 1px;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+  }
+  .poem-card.visible .poem-header-bar { opacity: 0.7; transform: scaleX(1); }
+
+  .poem-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--brown);
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .poem-text {
+    font-size: 19px;
+    line-height: 2.2;
+    text-align: center;
+    white-space: pre-line;
+    margin: 0;
+    color: var(--text);
+    position: relative;
+    z-index: 1;
+  }
+
+  .poem-year {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--gold-dark);
+    letter-spacing: 3px;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+  }
+  .poem-year::before, .poem-year::after {
+    content: '—';
+    margin: 0 12px;
+    color: var(--gold);
+    opacity: 0.5;
+  }
+
+  .poem-side-deco {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; height: 120px;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s;
+  }
+  .poem-card.visible .poem-side-deco { opacity: 0.15; }
+  .poem-side-deco.left { left: 12px; }
+  .poem-side-deco.right { right: 12px; }
+
+  .footer {
+    text-align: center;
+    padding: 60px 20px 40px;
+    position: relative;
+  }
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 30%; right: 30%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .footer-deco { margin-bottom: 20px; color: var(--gold); opacity: 0.5; }
+  .footer-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto 12px;
+    line-height: 1.6;
+  }
+  .footer-source {
+    font-size: 14px;
+    color: var(--gold-dark);
+    letter-spacing: 2px;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 28px; letter-spacing: 2px; }
+    .hero-frame { padding: 24px 32px; }
+    .poem-card { padding: 32px 24px 28px; }
+    .poem-title { font-size: 20px; }
+    .poem-text { font-size: 17px; line-height: 2; }
+    .bg-ornament { display: none; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .parallax-slow { will-change: transform; }
+    .parallax-fast { will-change: transform; }
+  }
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<svg class="bg-ornament bg-ornament-1 parallax-slow" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.5">
+  <circle cx="100" cy="100" r="80"/>
+  <circle cx="100" cy="100" r="60"/>
+  <circle cx="100" cy="100" r="40"/>
+  <path d="M100 20 L100 180 M20 100 L180 100"/>
+  <path d="M43.4 43.4 L156.6 156.6 M43.4 156.6 L156.6 43.4"/>
+  <circle cx="100" cy="100" r="95" stroke-dasharray="4 4"/>
+</svg>
+
+<svg class="bg-ornament bg-ornament-2 parallax-fast" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.5">
+  <path d="M100 10 C140 10, 170 40, 170 80 C170 120, 140 150, 100 150 C60 150, 30 120, 30 80 C30 40, 60 10, 100 10Z"/>
+  <path d="M100 30 C130 30, 150 50, 150 80 C150 110, 130 130, 100 130 C70 130, 50 110, 50 80 C50 50, 70 30, 100 30Z"/>
+  <path d="M100 50 C120 50, 130 60, 130 80 C130 100, 120 110, 100 110 C80 110, 70 100, 70 80 C70 60, 80 50, 100 50Z"/>
+  <path d="M100 10 L100 30 M100 130 L100 150 M30 80 L50 80 M150 80 L170 80"/>
+  <path d="M50 50 L65 65 M135 135 L150 150 M50 150 L65 135 M135 65 L150 50"/>
+</svg>
+
+<svg class="bg-ornament bg-ornament-3 parallax-slow" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.5">
+  <path d="M100 0 L100 200 M0 100 L200 100"/>
+  <circle cx="100" cy="100" r="70"/>
+  <circle cx="100" cy="100" r="50"/>
+  <path d="M100 30 L130 100 L100 170 L70 100Z"/>
+  <path d="M30 100 L100 70 L170 100 L100 130Z"/>
+</svg>
+
+<svg class="bg-ornament bg-ornament-4 parallax-fast" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.5">
+  <circle cx="100" cy="100" r="90"/>
+  <path d="M100 10 A90 90 0 0 1 190 100 M100 190 A90 90 0 0 1 10 100"/>
+  <path d="M100 30 A70 70 0 0 1 170 100 M100 170 A70 70 0 0 1 30 100"/>
+  <circle cx="100" cy="100" r="20"/>
+  <path d="M100 80 L100 120 M80 100 L120 100"/>
+</svg>
+
+<header class="hero">
+  <div class="hero-frame">
+    <div class="hero-corner-tl"></div>
+    <div class="hero-corner-tr"></div>
+    <div class="hero-corner-bl"></div>
+    <div class="hero-corner-br"></div>
+
+    <div class="hero-deco-top">
+      <div class="hero-deco-line"></div>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="color:var(--gold)">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+      <div class="hero-deco-line right"></div>
+    </div>
+
+    <h1>Александр Пушкин</h1>
+    <div class="hero-subtitle">Собрание стихотворений</div>
+    <div class="hero-years">1799 — 1837</div>
+
+    <div class="hero-deco-bottom">
+      <div class="hero-deco-line"></div>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="color:var(--gold)">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+      <div class="hero-deco-line right"></div>
+    </div>
+  </div>
+</header>
+
+<div class="scroll-hint">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--gold-dark)">
+    <path d="M12 5v14M5 12l7 7 7-7"/>
+  </svg>
+</div>
+
+<div class="container">
+
+  <div class="divider" data-reveal>
+    <div class="divider-line"></div>
+    <svg class="divider-ornament" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+      <circle cx="12" cy="12" r="4"/>
+    </svg>
+    <div class="divider-line"></div>
+  </div>
+
+  <article class="poem-card" data-reveal>
+    <svg class="poem-bg-ornament" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.8">
+      <circle cx="100" cy="100" r="80"/>
+      <circle cx="100" cy="100" r="55"/>
+      <path d="M100 20 L100 180 M20 100 L180 100"/>
+      <path d="M43 43 L157 157 M43 157 L157 43"/>
+    </svg>
+
+    <svg class="poem-side-deco left" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <svg class="poem-side-deco right" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <div class="poem-header">
+      <div class="poem-header-bar"></div>
+      <h2 class="poem-title">Я вас любил</h2>
+    </div>
+    <p class="poem-text">Я вас любил: любовь ещё, быть может,
+В душе моей угасла не совсем;
+Но пусть она вас больше не тревожит;
+Я не хочу печалить вас ничем.
+Я вас любил молча, безнадёжно,
+То робостью, то ревностью томим;
+Я вас любил так искренно, так нежно,
+Как дай вам бог любимой быть другим.</p>
+    <div class="poem-year">1829</div>
+  </article>
+
+  <div class="divider" data-reveal>
+    <div class="divider-line"></div>
+    <svg class="divider-ornament" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+    </svg>
+    <div class="divider-line"></div>
+  </div>
+
+  <article class="poem-card" data-reveal>
+    <svg class="poem-bg-ornament" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.8">
+      <path d="M100 10 C150 10, 180 50, 180 100 C180 150, 150 190, 100 190 C50 190, 20 150, 20 100 C20 50, 50 10, 100 10Z"/>
+      <path d="M100 30 C140 30, 160 60, 160 100 C160 140, 140 170, 100 170 C60 170, 40 140, 40 100 C40 60, 60 30, 100 30Z"/>
+      <path d="M100 50 C130 50, 140 70, 140 100 C140 130, 130 150, 100 150 C70 150, 60 130, 60 100 C60 70, 70 50, 100 50Z"/>
+    </svg>
+
+    <svg class="poem-side-deco left" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <svg class="poem-side-deco right" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <div class="poem-header">
+      <div class="poem-header-bar"></div>
+      <h2 class="poem-title">Если жизнь тебя обманет</h2>
+    </div>
+    <p class="poem-text">Если жизнь тебя обманет,
+Не печалься, не сердись!
+В день уныния смирись:
+День веселья, верь, настанет.
+
+Сердце в будущем живёт;
+Настоящее уныло:
+Всё мгновенно, всё пройдёт;
+Что пройдёт, то будет мило.</p>
+    <div class="poem-year">1825</div>
+  </article>
+
+  <div class="divider" data-reveal>
+    <div class="divider-line"></div>
+    <svg class="divider-ornament" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+      <circle cx="12" cy="12" r="4"/>
+    </svg>
+    <div class="divider-line"></div>
+  </div>
+
+  <article class="poem-card" data-reveal>
+    <svg class="poem-bg-ornament" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.8">
+      <path d="M100 0 L100 200 M0 100 L200 100"/>
+      <circle cx="100" cy="100" r="70"/>
+      <circle cx="100" cy="100" r="45"/>
+      <path d="M100 30 L140 100 L100 170 L60 100Z"/>
+      <path d="M30 100 L100 60 L170 100 L100 140Z"/>
+    </svg>
+
+    <svg class="poem-side-deco left" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <svg class="poem-side-deco right" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <div class="poem-header">
+      <div class="poem-header-bar"></div>
+      <h2 class="poem-title">Зимнее утро</h2>
+    </div>
+    <p class="poem-text">Мороз и солнце; день чудесный!
+Ещё ты дремлешь, друг прелестный —
+Пора, красавица, проснись:
+Открой сомкнуты негой взоры
+Навстречу северной Авроры,
+Звездою севера явись!
+
+Вечор, ты помнишь, вьюга злилась,
+На мутном небе мгла носилась;
+Луна, как бледное пятно,
+Сквозь тучи мрачные желтела,
+И ты печальная сидела —
+А нынче... погляди в окно:
+
+Под голубыми небесами
+Великолепными коврами,
+Блестя на солнце, снег лежит;
+Прозрачный лес один чернеет,
+И ель сквозь иней зеленеет,
+И речка подо льдом блестит.
+
+Вся комната янтарным блеском
+Озарена. Весёлым треском
+Трещит затопленная печь.
+Приятно думать у лежанки.
+Но знаешь: не велеть ли в санки
+Кобылку бурую запречь?
+
+Скользя по утреннему снегу,
+Друг милый, предадимся бегу
+Нетерпеливого коня
+И навестим поля пустые,
+Леса, недавно столь густые,
+И берег, милый для меня.</p>
+    <div class="poem-year">1829</div>
+  </article>
+
+  <div class="divider" data-reveal>
+    <div class="divider-line"></div>
+    <svg class="divider-ornament" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+    </svg>
+    <div class="divider-line"></div>
+  </div>
+
+  <article class="poem-card" data-reveal>
+    <svg class="poem-bg-ornament" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.8">
+      <circle cx="100" cy="100" r="90"/>
+      <path d="M100 10 A90 90 0 0 1 190 100"/>
+      <path d="M100 190 A90 90 0 0 1 10 100"/>
+      <circle cx="100" cy="100" r="60"/>
+      <circle cx="100" cy="100" r="30"/>
+      <path d="M100 70 L100 130 M70 100 L130 100"/>
+    </svg>
+
+    <svg class="poem-side-deco left" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <svg class="poem-side-deco right" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <div class="poem-header">
+      <div class="poem-header-bar"></div>
+      <h2 class="poem-title">К Чаадаеву</h2>
+    </div>
+    <p class="poem-text">Любви, надежды, тихой славы
+Недолго нежил нас обман,
+Исчезли юные забавы,
+Как сон, как утренний туман;
+Но в нас горит ещё желанье,
+Под гнётом власти роковой
+Нетерпеливою душой
+Отчизны внемлем призыванье.
+
+Мы ждём с томленьем упованья
+Минуты вольности святой,
+Как ждёт любовник молодой
+Минуты верного свиданья.
+
+Пока свободою горим,
+Пока сердца для чести живы,
+Мой друг, отчизне посвятим
+Души прекрасные порывы!
+Товарищ, верь: взойдёт она,
+Звезда пленительного счастья,
+Россия вспрянет ото сна,
+И на обломках самовластья
+Напишут наши имена!</p>
+    <div class="poem-year">1818</div>
+  </article>
+
+  <div class="divider" data-reveal>
+    <div class="divider-line"></div>
+    <svg class="divider-ornament" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+      <circle cx="12" cy="12" r="4"/>
+    </svg>
+    <div class="divider-line"></div>
+  </div>
+
+  <article class="poem-card" data-reveal>
+    <svg class="poem-bg-ornament" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.8">
+      <path d="M100 0 C120 40, 160 60, 200 80 C160 100, 120 120, 100 160 C80 120, 40 100, 0 80 C40 60, 80 40, 100 0Z"/>
+      <path d="M100 20 C115 50, 145 65, 180 80 C145 95, 115 110, 100 140 C85 110, 55 95, 20 80 C55 65, 85 50, 100 20Z"/>
+      <circle cx="100" cy="80" r="15"/>
+    </svg>
+
+    <svg class="poem-side-deco left" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <svg class="poem-side-deco right" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <div class="poem-header">
+      <div class="poem-header-bar"></div>
+      <h2 class="poem-title">У лукоморья дуб зелёный</h2>
+    </div>
+    <p class="poem-text">У лукоморья дуб зелёный;
+Златая цепь на дубе том:
+И днём и ночью кот учёный
+Всё ходит по цепи кругом;
+Идёт направо — песнь заводит,
+Налево — сказку говорит.
+Там чудеса: там леший бродит,
+Русалка на ветвях сидит;
+Там на неведомых дорожках
+Следы невиданных зверей;
+Избушка там на курьих ножках
+Стоит без окон, без дверей;
+Там лес и дол видений полны;
+Там о заре прихлынут волны
+На брег песчаный и пустой,
+И тридцать витязей прекрасных
+Чредой из вод выходят ясных,
+И с ними дядька их морской;
+Там королевич мимоходом
+Пленяет грозного царя;
+Там в облаках перед народом
+Через леса, через моря
+Колдун несёт богатыря;
+В темнице там царевна тужит,
+А бурый волк ей верно служит;
+Там ступа с Бабою Ягой
+Идёт, бредёт сама собой;
+Там царь Кащей над златом чахнет;
+Там русский дух... там Русью пахнет!
+И там я был, и мёд я пил;
+У моря видел дуб зелёный;
+Под ним сидел, и кот учёный
+Свои мне сказки говорил.
+Одну я помню: сказку эту
+Поведаю теперь я свету...</p>
+    <div class="poem-year">Из поэмы «Руслан и Людмила», 1820</div>
+  </article>
+
+  <div class="divider" data-reveal>
+    <div class="divider-line"></div>
+    <svg class="divider-ornament" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+    </svg>
+    <div class="divider-line"></div>
+  </div>
+
+  <article class="poem-card" data-reveal>
+    <svg class="poem-bg-ornament" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.8">
+      <circle cx="100" cy="100" r="85"/>
+      <circle cx="100" cy="100" r="60"/>
+      <circle cx="100" cy="100" r="35"/>
+      <path d="M100 15 L100 185 M15 100 L185 100"/>
+      <path d="M40 40 L160 160 M40 160 L160 40"/>
+    </svg>
+
+    <svg class="poem-side-deco left" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <svg class="poem-side-deco right" viewBox="0 0 24 120" fill="none" stroke="currentColor" stroke-width="0.8" style="color:var(--gold)">
+      <path d="M12 0 L12 120"/>
+      <circle cx="12" cy="30" r="3"/>
+      <circle cx="12" cy="60" r="3"/>
+      <circle cx="12" cy="90" r="3"/>
+    </svg>
+
+    <div class="poem-header">
+      <div class="poem-header-bar"></div>
+      <h2 class="poem-title">Я помню чудное мгновенье</h2>
+    </div>
+    <p class="poem-text">Я помню чудное мгновенье:
+Передо мной явилась ты,
+Как мимолётное виденье,
+Как гений чистой красоты.
+
+В томленьях грусти безнадежной,
+В тревогах шумной суеты,
+Звучал мне долго голос нежный
+И снились милые черты.
+
+Шли годы. Бурь порыв мятежный
+Рассеял прежние мечты,
+И я забыл твой голос нежный,
+Твои небесные черты.
+
+В глуши, во мраке заточенья
+Тянулись тихо дни мои
+Без божества, без вдохновенья,
+Без слёз, без жизни, без любви.
+
+Душе настало пробужденье:
+И вот опять явилась ты,
+Как мимолётное виденье,
+Как гений чистой красоты.
+
+И сердце бьётся в упоенье,
+И для него воскресли вновь
+И божество, и вдохновенье,
+И жизнь, и слёзы, и любовь.</p>
+    <div class="poem-year">1827</div>
+  </article>
+
+  <div class="divider" data-reveal>
+    <div class="divider-line"></div>
+    <svg class="divider-ornament" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+      <circle cx="12" cy="12" r="4"/>
+    </svg>
+    <div class="divider-line"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-deco">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="color:var(--gold)">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+    </div>
+    <p class="footer-quote">«Поэт — это гражданин, дань которому приносит вся страна»</p>
+    <p class="footer-source">Собрание стихотворений А.С. Пушкина</p>
+  </footer>
+
+</div>
+
+<script>
+(function() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('[data-reveal]').forEach(function(el) {
+    observer.observe(el);
+  });
+
+  var parallaxElements = document.querySelectorAll('.parallax-slow, .parallax-fast');
+  var ticking = false;
+
+  function updateParallax() {
+    var scrollY = window.scrollY;
+    parallaxElements.forEach(function(el) {
+      var speed = el.classList.contains('parallax-slow') ? 0.03 : 0.06;
+      el.style.transform = 'translateY(' + (scrollY * speed) + 'px)';
+    });
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  });
+  updateParallax();
+})();
+</script>
+
+</body>
+</html>
